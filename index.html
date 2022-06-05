@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>数字华容道-15puzzle</title>
+    <script src="game.js"></script>
+    <style type="text/css">
+        #title {
+            user-select: none;
+            position: absolute;
+            left: 220px;
+        }
+
+        #background {
+            height: 700px;
+            width: 600px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        #gamearea {
+            height: 430px;
+            width: 430px;
+            top: 105px;
+            left: 85px;
+            background-color: rgb(255, 213, 196);
+            position: absolute;
+        }
+
+        #button {
+            user-select: none;
+            position: absolute;
+            top: 600px;
+            left: 100px;
+            height: 50px;
+            width: 100px;
+            background-color: lightgray;
+            border-radius: 5px;
+            text-align: center;
+            font: normal bold 20px/50px "Microsoft Yahei";
+        }
+
+        #info {
+            user-select: none;
+            position: absolute;
+            left: 230px;
+            top: 600px;
+            text-align: center;
+            font: normal normal 20px/50px "Microsoft Yahei";
+        }
+
+        #button:hover {
+            background-color: rgb(177, 177, 177);
+        }
+
+        #button:active {
+            transform: translate(1px, 1px);
+        }
+
+        .blocks {
+            user-select: none;
+            width: 94px;
+            height: 94px;
+            background-color: lightcoral;
+            font: normal bold 40px/100px "Times New Roman";
+            text-align: center;
+            position: absolute;
+        }
+
+        .blocks:hover {
+            background-color: lightsalmon;
+            box-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background">
+        <div id="title">
+            <h1>数字华容道</h1>
+        </div>
+        <div id="gamearea"></div>
+        <div class="blocks" id="block_1">1</div>
+        <div class="blocks" id="block_2">2</div>
+        <div class="blocks" id="block_3">3</div>
+        <div class="blocks" id="block_4">4</div>
+        <div class="blocks" id="block_5">5</div>
+        <div class="blocks" id="block_6">6</div>
+        <div class="blocks" id="block_7">7</div>
+        <div class="blocks" id="block_8">8</div>
+        <div class="blocks" id="block_9">9</div>
+        <div class="blocks" id="block_10">10</div>
+        <div class="blocks" id="block_11">11</div>
+        <div class="blocks" id="block_12">12</div>
+        <div class="blocks" id="block_13">13</div>
+        <div class="blocks" id="block_14">14</div>
+        <div class="blocks" id="block_15">15</div>
+        <div id="button">开始</div>
+        <div id="info"> ← 点击按钮开始游戏</div>
+    </div>
+</body>
+
+</html>
